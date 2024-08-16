@@ -1,0 +1,59 @@
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.home_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  background-image: url(../../assets/campfire_home.jpg);
+}
+
+.title_container {
+  position: absolute;
+  right: 15%;
+  top: 20%;
+  z-index: 100;
+}
+
+.main_title {
+  font-size: 100px;
+  height: auto;
+  width: 600px;
+  background: #ff0000;
+  background: linear-gradient(to left, #ff0000 0%, #ffff00 50%, #ff0000 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: -200% center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home_container {
+    background-position: center;
+  }
+  .title_container {
+    top: 5vh;
+    right: 0vw;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .main_title {
+    font-size: 50px;
+    width: 300px;
+  }
+}
